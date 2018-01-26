@@ -12,11 +12,16 @@
 		41875EF22018052D000BE0D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41875EF02018052D000BE0D3 /* Main.storyboard */; };
 		41875EF42018052D000BE0D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41875EF32018052D000BE0D3 /* Assets.xcassets */; };
 		41875EF72018052D000BE0D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41875EF52018052D000BE0D3 /* LaunchScreen.storyboard */; };
-		41875F022018052D000BE0D3 /* SimplePlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41875F012018052D000BE0D3 /* SimplePlayerTests.swift */; };
+		41875F0E2018056E000BE0D3 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41875F0C2018056E000BE0D3 /* Song.swift */; };
+		41875F0F2018056E000BE0D3 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41875F0D2018056E000BE0D3 /* Playlist.swift */; };
+		41D20D10201A9CAF0050A526 /* PlaylistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D20D0F201A9CAF0050A526 /* PlaylistTests.swift */; };
+		41D20D1E201A9F920050A526 /* List2d.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D20D1D201A9F920050A526 /* List2d.swift */; };
+		41D20D20201AA1400050A526 /* List2dTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D20D1F201AA1400050A526 /* List2dTests.swift */; };
+		F4215A25AE8B5E06AAE5C3C5 /* Pods_SimplePlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64675F5BCB71CEA76DE3C3AE /* Pods_SimplePlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		41875EFE2018052D000BE0D3 /* PBXContainerItemProxy */ = {
+		41D20D12201A9CAF0050A526 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 41875EE12018052D000BE0D3 /* Project object */;
 			proxyType = 1;
@@ -33,9 +38,16 @@
 		41875EF32018052D000BE0D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41875EF62018052D000BE0D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41875EF82018052D000BE0D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		41875EFD2018052D000BE0D3 /* SimplePlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimplePlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		41875F012018052D000BE0D3 /* SimplePlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePlayerTests.swift; sourceTree = "<group>"; };
-		41875F032018052D000BE0D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41875F0C2018056E000BE0D3 /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		41875F0D2018056E000BE0D3 /* Playlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		41D20D0D201A9CAF0050A526 /* SimplePlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimplePlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		41D20D0F201A9CAF0050A526 /* PlaylistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistTests.swift; sourceTree = "<group>"; };
+		41D20D19201A9D870050A526 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41D20D1D201A9F920050A526 /* List2d.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List2d.swift; sourceTree = "<group>"; };
+		41D20D1F201AA1400050A526 /* List2dTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List2dTests.swift; sourceTree = "<group>"; };
+		64675F5BCB71CEA76DE3C3AE /* Pods_SimplePlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimplePlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB2EFEC633A83278EFA5302F /* Pods-SimplePlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimplePlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimplePlayer/Pods-SimplePlayer.release.xcconfig"; sourceTree = "<group>"; };
+		BE67029302B307FD10D42DED /* Pods-SimplePlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimplePlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimplePlayer/Pods-SimplePlayer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,10 +55,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4215A25AE8B5E06AAE5C3C5 /* Pods_SimplePlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		41875EFA2018052D000BE0D3 /* Frameworks */ = {
+		41D20D0A201A9CAF0050A526 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -56,12 +69,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3DF7D9EA0C1E6115C6DB7F70 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE67029302B307FD10D42DED /* Pods-SimplePlayer.debug.xcconfig */,
+				AB2EFEC633A83278EFA5302F /* Pods-SimplePlayer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		41875EE02018052D000BE0D3 = {
 			isa = PBXGroup;
 			children = (
 				41875EEB2018052D000BE0D3 /* SimplePlayer */,
-				41875F002018052D000BE0D3 /* SimplePlayerTests */,
+				41D20D0E201A9CAF0050A526 /* SimplePlayerTests */,
 				41875EEA2018052D000BE0D3 /* Products */,
+				3DF7D9EA0C1E6115C6DB7F70 /* Pods */,
+				979F982664FE5F847420D7EE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,7 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				41875EE92018052D000BE0D3 /* SimplePlayer.app */,
-				41875EFD2018052D000BE0D3 /* SimplePlayerTests.xctest */,
+				41D20D0D201A9CAF0050A526 /* SimplePlayerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,6 +101,7 @@
 		41875EEB2018052D000BE0D3 /* SimplePlayer */ = {
 			isa = PBXGroup;
 			children = (
+				41875F1020180573000BE0D3 /* models */,
 				41875EEC2018052D000BE0D3 /* AppDelegate.swift */,
 				41875EEE2018052D000BE0D3 /* ViewController.swift */,
 				41875EF02018052D000BE0D3 /* Main.storyboard */,
@@ -87,13 +112,32 @@
 			path = SimplePlayer;
 			sourceTree = "<group>";
 		};
-		41875F002018052D000BE0D3 /* SimplePlayerTests */ = {
+		41875F1020180573000BE0D3 /* models */ = {
 			isa = PBXGroup;
 			children = (
-				41875F012018052D000BE0D3 /* SimplePlayerTests.swift */,
-				41875F032018052D000BE0D3 /* Info.plist */,
+				41875F0D2018056E000BE0D3 /* Playlist.swift */,
+				41875F0C2018056E000BE0D3 /* Song.swift */,
+				41D20D1D201A9F920050A526 /* List2d.swift */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		41D20D0E201A9CAF0050A526 /* SimplePlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				41D20D19201A9D870050A526 /* Info.plist */,
+				41D20D1F201AA1400050A526 /* List2dTests.swift */,
+				41D20D0F201A9CAF0050A526 /* PlaylistTests.swift */,
 			);
 			path = SimplePlayerTests;
+			sourceTree = "<group>";
+		};
+		979F982664FE5F847420D7EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64675F5BCB71CEA76DE3C3AE /* Pods_SimplePlayer.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,9 +147,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41875F062018052D000BE0D3 /* Build configuration list for PBXNativeTarget "SimplePlayer" */;
 			buildPhases = (
+				D8F810552BA51B87A4278F2D /* [CP] Check Pods Manifest.lock */,
 				41875EE52018052D000BE0D3 /* Sources */,
 				41875EE62018052D000BE0D3 /* Frameworks */,
 				41875EE72018052D000BE0D3 /* Resources */,
+				B9CB8718A8944E777D5715D6 /* [CP] Embed Pods Frameworks */,
+				14B1216FD6290BBE26DB3942 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -116,22 +163,22 @@
 			productReference = 41875EE92018052D000BE0D3 /* SimplePlayer.app */;
 			productType = "com.apple.product-type.application";
 		};
-		41875EFC2018052D000BE0D3 /* SimplePlayerTests */ = {
+		41D20D0C201A9CAF0050A526 /* SimplePlayerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 41875F092018052D000BE0D3 /* Build configuration list for PBXNativeTarget "SimplePlayerTests" */;
+			buildConfigurationList = 41D20D14201A9CAF0050A526 /* Build configuration list for PBXNativeTarget "SimplePlayerTests" */;
 			buildPhases = (
-				41875EF92018052D000BE0D3 /* Sources */,
-				41875EFA2018052D000BE0D3 /* Frameworks */,
-				41875EFB2018052D000BE0D3 /* Resources */,
+				41D20D09201A9CAF0050A526 /* Sources */,
+				41D20D0A201A9CAF0050A526 /* Frameworks */,
+				41D20D0B201A9CAF0050A526 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				41875EFF2018052D000BE0D3 /* PBXTargetDependency */,
+				41D20D13201A9CAF0050A526 /* PBXTargetDependency */,
 			);
 			name = SimplePlayerTests;
 			productName = SimplePlayerTests;
-			productReference = 41875EFD2018052D000BE0D3 /* SimplePlayerTests.xctest */;
+			productReference = 41D20D0D201A9CAF0050A526 /* SimplePlayerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -149,7 +196,7 @@
 						DevelopmentTeam = 438ES9475K;
 						ProvisioningStyle = Automatic;
 					};
-					41875EFC2018052D000BE0D3 = {
+					41D20D0C201A9CAF0050A526 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = 438ES9475K;
 						ProvisioningStyle = Automatic;
@@ -171,7 +218,7 @@
 			projectRoot = "";
 			targets = (
 				41875EE82018052D000BE0D3 /* SimplePlayer */,
-				41875EFC2018052D000BE0D3 /* SimplePlayerTests */,
+				41D20D0C201A9CAF0050A526 /* SimplePlayerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -187,7 +234,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		41875EFB2018052D000BE0D3 /* Resources */ = {
+		41D20D0B201A9CAF0050A526 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -196,31 +243,91 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14B1216FD6290BBE26DB3942 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimplePlayer/Pods-SimplePlayer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9CB8718A8944E777D5715D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SimplePlayer/Pods-SimplePlayer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimplePlayer/Pods-SimplePlayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8F810552BA51B87A4278F2D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimplePlayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		41875EE52018052D000BE0D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41875F0E2018056E000BE0D3 /* Song.swift in Sources */,
+				41D20D1E201A9F920050A526 /* List2d.swift in Sources */,
 				41875EEF2018052D000BE0D3 /* ViewController.swift in Sources */,
 				41875EED2018052D000BE0D3 /* AppDelegate.swift in Sources */,
+				41875F0F2018056E000BE0D3 /* Playlist.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		41875EF92018052D000BE0D3 /* Sources */ = {
+		41D20D09201A9CAF0050A526 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41875F022018052D000BE0D3 /* SimplePlayerTests.swift in Sources */,
+				41D20D10201A9CAF0050A526 /* PlaylistTests.swift in Sources */,
+				41D20D20201AA1400050A526 /* List2dTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		41875EFF2018052D000BE0D3 /* PBXTargetDependency */ = {
+		41D20D13201A9CAF0050A526 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 41875EE82018052D000BE0D3 /* SimplePlayer */;
-			targetProxy = 41875EFE2018052D000BE0D3 /* PBXContainerItemProxy */;
+			targetProxy = 41D20D12201A9CAF0050A526 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -284,7 +391,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -327,7 +434,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -337,10 +444,12 @@
 		};
 		41875F072018052D000BE0D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE67029302B307FD10D42DED /* Pods-SimplePlayer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 438ES9475K;
 				INFOPLIST_FILE = SimplePlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vanelizarov.SimplePlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -350,10 +459,12 @@
 		};
 		41875F082018052D000BE0D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB2EFEC633A83278EFA5302F /* Pods-SimplePlayer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 438ES9475K;
 				INFOPLIST_FILE = SimplePlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vanelizarov.SimplePlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -361,13 +472,13 @@
 			};
 			name = Release;
 		};
-		41875F0A2018052D000BE0D3 /* Debug */ = {
+		41D20D15201A9CAF0050A526 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 438ES9475K;
 				INFOPLIST_FILE = SimplePlayerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vanelizarov.SimplePlayerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -376,13 +487,13 @@
 			};
 			name = Debug;
 		};
-		41875F0B2018052D000BE0D3 /* Release */ = {
+		41D20D16201A9CAF0050A526 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 438ES9475K;
 				INFOPLIST_FILE = SimplePlayerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vanelizarov.SimplePlayerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -410,14 +521,16 @@
 				41875F082018052D000BE0D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		41875F092018052D000BE0D3 /* Build configuration list for PBXNativeTarget "SimplePlayerTests" */ = {
+		41D20D14201A9CAF0050A526 /* Build configuration list for PBXNativeTarget "SimplePlayerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				41875F0A2018052D000BE0D3 /* Debug */,
-				41875F0B2018052D000BE0D3 /* Release */,
+				41D20D15201A9CAF0050A526 /* Debug */,
+				41D20D16201A9CAF0050A526 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
