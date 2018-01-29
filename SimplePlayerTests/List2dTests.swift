@@ -41,6 +41,8 @@ class List2dTests: XCTestCase {
         self.list.append(item: songC)
         self.list.insert(item: songB, at: 1)
         
+        XCTAssertEqual(self.list.get(at: 1).value.id, songB.id, "inserting at index not wrking")
+        
     }
     
     func testItemRemovedFromList() {
