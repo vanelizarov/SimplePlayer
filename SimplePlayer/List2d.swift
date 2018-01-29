@@ -26,7 +26,7 @@ internal class Node<T>: Equatable  {
 
 class List2d<S> {
     
-    private var items: [Node<S>]
+    private(set) var items: [Node<S>]
     
     var length: Int {
         get {
@@ -79,7 +79,7 @@ class List2d<S> {
                 self.items[index - 1].next = node
             }
             
-            self.changeIndexes(from: index + 1, to: self.length - 1, by: 1)
+            self.changeIndexes(from: index, to: self.length - 1, by: 1)
             self.items.insert(node, at: index)
         }
     }
