@@ -8,38 +8,34 @@
 
 import Foundation
 
-class Playlist {
+class Playlist: List2d<Song> {
     
-    private var songs: [Song] = []
-    
-    var id: UUID? = nil
+    private(set) var id: UUID? = nil
     var name: String = ""
-    
-    var length: Int {
-        get {
-            return self.songs.count
-        }
-    }
+    var artist: String? = nil
     
     init(name: String) {
+        super.init()
+        
         self.id = UUID()
         self.name = name
     }
     
-    func getSong(at index: Int) -> Song {
-        return self.songs[index]
+    init(name: String, artist: String) {
+        super.init()
+        
+        self.id = UUID()
+        self.name = name
+        self.artist = artist
     }
     
-    func addSong(_ song: Song) -> Void {
-        self.songs.append(song)
-    }
-    
-    func removeSong(at index: Int) -> Song {
-        return self.songs.remove(at: index)
-    }
-    
-    func updateSong(at index: Int, title: String?, artist: String?) -> Void {
-        self.songs[index].title = title == nil ? self.songs[index].title : title!
-        self.songs[index].artist = artist == nil ? self.songs[index].artist : artist!
+    func update(at index: Int, title: String?, artist: String?) {
+        if let title = title {
+            self.get(at: index).value.title = title
+        }
+        
+        if let artist = artist {
+            self.get(at: index).value.artist = artist
+        }
     }
 }
