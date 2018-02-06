@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Playlists Controller-->
+        <!--Playlists-->
         <scene sceneID="hjM-eb-G4H">
             <objects>
                 <tableViewController id="2V5-RF-4cJ" customClass="PlaylistsController" customModule="SimplePlayer" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,11 +18,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlaylistCell" id="u9H-iq-IoT">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlaylistCell" id="u9H-iq-IoT" customClass="PlaylistCell" customModule="SimplePlayer" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u9H-iq-IoT" id="V37-p3-Isu">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -35,7 +35,7 @@
                             <outlet property="delegate" destination="2V5-RF-4cJ" id="oo7-iw-BEc"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="3NF-XN-vJa"/>
+                    <navigationItem key="navigationItem" title="Playlists" id="3NF-XN-vJa"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eTN-2J-Qc7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -44,13 +44,13 @@
         <!--Playlist Controller-->
         <scene sceneID="AvP-To-AxB">
             <objects>
-                <tableViewController id="eAK-CY-DST" customClass="PlaylistController" customModule="SimplePlayer" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="PlaylistController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eAK-CY-DST" customClass="PlaylistController" customModule="SimplePlayer" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="qh4-jq-doa">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SongCell" id="umg-b3-ww2">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SongCell" id="umg-b3-ww2" customClass="SongCell" customModule="SimplePlayer" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="umg-b3-ww2" id="NmW-AL-gsl">

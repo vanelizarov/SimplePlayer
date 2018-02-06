@@ -42,6 +42,15 @@ class RootNavigationController: UINavigationController {
         
         self.navigationBar.barTintColor = UIColor.primary
         self.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        self.navigationBar.tintColor = UIColor.white
+    }
+    
+    func openPlayerView() {
+        self.disableInteractivePlayerTranstioning = true
+
+        self.present(self.playerController, animated: true) { 
+            self.disableInteractivePlayerTranstioning = false
+        }
     }
 
 }

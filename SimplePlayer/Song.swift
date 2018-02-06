@@ -14,11 +14,15 @@ class Song {
     var title: String = ""
     var artist: String = ""
     
+    var isPlaying: Bool = false
+    
     // TODO: add artwork field
     
-    lazy var fullTitle: String = {
-        return "\(self.artist) - \(self.title)"
-    }()
+    var fullTitle: String {
+        get {
+            return "\(self.artist) - \(self.title)"
+        }
+    }
     
     init(title: String, artist: String) {
         self.id = UUID()

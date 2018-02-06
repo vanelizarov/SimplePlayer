@@ -8,8 +8,13 @@
 
 import UIKit
 
-class PlaylistController: UITableViewController {
+let SONG_CELL_REUSE_ID = "SongCell"
 
+class PlaylistController: UITableViewController {
+    
+    var playlist: Playlist!
+    var lastSelectedIndexPath: IndexPath!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,6 +23,9 @@ class PlaylistController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        let nib = UINib(nibName: "SongCell", bundle: nil)
+        self.tableView.register(nib, forCellReuseIdentifier: SONG_CELL_REUSE_ID)
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,23 +37,55 @@ class PlaylistController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return self.playlist!.length
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
+        let cell = tableView.dequeueReusableCell(withIdentifier: SONG_CELL_REUSE_ID, for: indexPath) as! SongCell
+        
+        let songNode = self.playlist.get(at: indexPath.row)
+        
+        cell.title.text = songNode.value.title
+        cell.artist.text = songNode.value.artist
+        
+        if self.lastSelectedIndexPath != nil && indexPath.row == self.lastSelectedIndexPath.row {
+            
+            if !cell.isActive {
+                cell.activate()
+                
+                PlayerService.shared.enqueue(song: songNode.value)
+                
+            } else {
+                let navCtrl = self.navigationController as! RootNavigationController
+                navCtrl.openPlayerView()
+            }
+            
+        } else if !cell.isActive && songNode.value.isPlaying {
+            cell.activate()
+        } else {
+            cell.deactivate()
+        }
 
         return cell
     }
-    */
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 70.0
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        self.lastSelectedIndexPath = indexPath
+
+        tableView.reloadData()
+
+    }
 
     /*
     // Override to support conditional editing of the table view.
